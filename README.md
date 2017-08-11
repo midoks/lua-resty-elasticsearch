@@ -3,7 +3,7 @@
 base on [lua-resty-http](https://github.com/pintsized/lua-resty-http)
 
 # Status
-test
+develop
 
 # Features
 
@@ -17,6 +17,8 @@ test
 * [timeout](#timeout)
 * [create](#create)
 * [drop](#drop)
+* [delete](#delete)
+* [count](#count)
 * [update](#update)
 * [search](#search)
 * [query](#query)
@@ -95,6 +97,28 @@ else
   ngx.say(err)
 end
 
+```
+
+## delete
+
+```
+local ok, err = el:delete('AV3Lgivmycrvlts2ikBt')
+if ok then
+  ngx.say(ok)
+else 
+  ngx.say(err)
+end
+```
+
+## count
+
+```
+local ok, err = el:count()
+if ok then
+  ngx.say(ok)
+else 
+  ngx.say(err)
+end
 ```
 
 ## update
