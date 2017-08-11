@@ -12,8 +12,27 @@ test
 # API
 
 * [new](#new)
+* [index](#index)
+* [type](#type)
 
 
 ## new
 
-`syntax: httpc = http.new()`
+```
+local el = elastic:new({
+  { host = "192.168.0.2", port = 9200 },
+  { host = "192.168.0.1", port = 9200 }
+})
+```
+
+## index
+
+```
+el:index('log_2017-8')
+```
+
+## type
+
+```
+el:type('log')
+```
