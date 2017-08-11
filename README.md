@@ -16,7 +16,10 @@ test
 * [type](#type)
 * [timeout](#timeout)
 * [create](#create)
-
+* [drop](#drop)
+* [update](#update)
+* [search](#search)
+* [query](#query)
 
 ## new
 
@@ -79,7 +82,57 @@ if ok then
 else 
   ngx.say(err)
 end
+```
 
 
+## drop
 
+```
+local ok, err = el:drop()
+if ok then
+  ngx.say(ok)
+else 
+  ngx.say(err)
+end
+
+```
+
+## update
+
+```
+local ok, err = el:update('AV3Lgin5ycrvlts2ikBs',log_json)
+if ok then
+  ngx.say(ok)
+else 
+  ngx.say(err)
+end
+
+```
+
+## search
+
+```
+local ok, err = el:search({
+   query = {
+      term = {
+      host = "127.0.0.1"
+    }
+  }
+})
+if ok then
+  ngx.say(ok)
+else 
+  ngx.say(err)
+end
+```
+
+## query
+
+```
+local ok, err = el:query("time_local:2017")
+if ok then
+  ngx.say(ok)
+else 
+  ngx.say(err)
+end
 ```
