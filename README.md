@@ -14,6 +14,7 @@ test
 * [new](#new)
 * [index](#index)
 * [type](#type)
+* [timeout](#timeout)
 
 
 ## new
@@ -35,4 +36,11 @@ el:index('log_2017-8')
 
 ```
 el:type('log')
+```
+
+
+## timeout
+
+```
+el:timeout(500)
 ```
