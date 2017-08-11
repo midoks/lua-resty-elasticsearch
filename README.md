@@ -1,7 +1,7 @@
 # lua-resty-elasticsearch
 
-base on [lua-resty-http](https://github.com/pintsized/lua-resty-http)
-[openresty](https://openresty.org)lib
+* base on [lua-resty-http](https://github.com/pintsized/lua-resty-http)
+* [openresty](https://openresty.org)
 
 # Status
 develop
